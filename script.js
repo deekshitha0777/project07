@@ -57,3 +57,36 @@ function sendMessage() {
     document.getElementById("userInput").value = "";
     chatbox.scrollTop = chatbox.scrollHeight;
 }
+function generateSyllabus() {
+    let level = document.getElementById("level").value;
+    let subject = document.getElementById("subject").value;
+    let output = document.getElementById("output");
+
+    output.innerHTML = `
+        <h3>${level} ${subject} Syllabus</h3>
+        <ul>
+            <li>Introduction to ${subject}</li>
+            <li>Core Concepts of ${subject}</li>
+            <li>Advanced Topics in ${subject}</li>
+            <li>Practical Applications</li>
+            <li>Previous Year Question Analysis</li>
+        </ul>
+    `;
+}
+
+function generateQuestions() {
+    let level = document.getElementById("level").value;
+    let subject = document.getElementById("subject").value;
+    let output = document.getElementById("output");
+
+    output.innerHTML = `
+        <h3>Important Questions for ${level} ${subject}</h3>
+        <ol>
+            <li>Explain the fundamental concepts of ${subject}.</li>
+            <li>Describe real-life applications of ${subject}.</li>
+            <li>Short note on important theories in ${subject}.</li>
+            <li>Solve numerical problems related to ${subject}.</li>
+            <li>Discuss previous year exam trends in ${subject}.</li>
+        </ol>
+    `;
+}

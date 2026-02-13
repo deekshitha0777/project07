@@ -6,6 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="ai-section">
+    <h2>AI Study Planner</h2>
+
+    <label>Select Level:</label>
+    <select id="level">
+        <option value="10th">10th</option>
+        <option value="12th">12th</option>
+        <option value="Degree">Degree</option>
+    </select>
+
+    <label>Enter Subject:</label>
+    <input type="text" id="subject" placeholder="Eg: Maths, Physics">
+
+    <button onclick="generateSyllabus()">Generate Syllabus</button>
+    <button onclick="generateQuestions()">Generate Important Questions</button>
+
+    <div id="output"></div>
+</div>
+
 
     <div class="container">
         <img src="logo.png" class="logo" alt="Logo">git
