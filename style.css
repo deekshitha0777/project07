@@ -70,3 +70,30 @@ button:hover {
 .chatbox p {
     margin: 5px 0;
 }
+.ai-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+}
+
+.ai-section input,
+.ai-section select {
+    padding: 8px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+.ai-section button {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+}
