@@ -22,3 +22,38 @@ function generatePlan() {
 
     document.getElementById("output").innerHTML = studyPlan;
 }
+function sendMessage() {
+
+    let input = document.getElementById("userInput").value.toLowerCase();
+    let chatbox = document.getElementById("chatbox");
+
+    let userMessage = `<p><strong>You:</strong> ${input}</p>`;
+    chatbox.innerHTML += userMessage;
+
+    let botReply = "";
+
+    if (input.includes("motivate")) {
+        botReply = "Keep going! Small daily progress leads to big success 💪";
+    }
+    else if (input.includes("stress")) {
+        botReply = "Take a 10-minute break and try deep breathing exercises.";
+    }
+    else if (input.includes("math")) {
+        botReply = "Practice daily and solve previous year question papers.";
+    }
+    else if (input.includes("exam")) {
+        botReply = "Start revising early and follow your AI study plan regularly.";
+    }
+    else if (input.includes("timetable")) {
+        botReply = "Use the Generate Plan button above to create your schedule.";
+    }
+    else {
+        botReply = "I am your study assistant 🤖 Ask me about exams, stress, motivation, or subjects!";
+    }
+
+    let botMessage = `<p><strong>Bot:</strong> ${botReply}</p>`;
+    chatbox.innerHTML += botMessage;
+
+    document.getElementById("userInput").value = "";
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
