@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Study Planner - Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Planner Content Goes Here -->
+     <body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_ef835c7490c31e2c9895e3a94b6d3aa0.webp" alt="Logo">
+    </div>
+
+    <div class="container">
+        <!-- Your content -->
+    </div>
+
+</body>
+     <div class="container">
+        <h1>AI Study Planner</h1>
+
+        <div class="form">
+            <label>Subjects (comma separated)</label>
+            <input type="text" id="subjects" placeholder="Math, Science, English">
+
+            <label>Exam Date</label>
+            <input type="date" id="examDate">
+
+            <label>Study Hours Per Day</label>
+            <input type="number" id="hours" placeholder="Enter hours">
+
+            <button onclick="generatePlan()">Generate Plan</button>
+        </div>
+
+        <div id="output"></div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

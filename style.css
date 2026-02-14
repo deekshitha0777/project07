@@ -17,8 +17,11 @@ body {
 }
 
 .logo {
-    width: 80px;
-    margin-bottom: 10px;
+    width: 10px;
+    margin-bottom: 5px;
+    height: 10px;
+    position: fixed;
+    
 }
 
 h1 {
@@ -96,4 +99,12 @@ button:hover {
 
 #output {
     margin-top: 20px;
+}
+.chat-box {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
 }
